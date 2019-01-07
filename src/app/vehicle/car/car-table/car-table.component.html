@@ -1,0 +1,22 @@
+<table align="left" id="myTable"> 
+  <tr>
+          
+          <th>Model</th>
+          <th>Wheels</th>
+          <th>Seats</th>
+          <th>Type</th>
+          <th>Brand Name</th>
+          <th>Engine Type</th>
+          <th>Date of Purchase</th>
+          <th>Price</th>
+  </tr>
+    <tr *ngFor="let carobj of CarObject">
+      <td>{{carobj.CarModel}} </td>
+      <td>{{carobj.NoOfWheels}}</td>
+      <td>{{carobj.NoOfSeats}}</td>
+      <td>{{carobj.CarType}}</td>
+      <td>{{carobj.CarBrand}}</td>
+      <td>{{carobj.CarEngine}}</td>
+      <td>{{carobj.CarDateOfPurchase}}</td>
+    </tr>
+</table>

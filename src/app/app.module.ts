@@ -1,22 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-//import { FormComponent } from './car/form/form.component';
-import { CarModule } from './car/car.module';
 import { VehicleModule } from './vehicle/vehicle.module';
+import{FormsModule} from '@angular/forms';
+import { PracticeModule } from './practice/practice.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    // FormComponent
+    
     
   ],
   imports: [
     BrowserModule,
-    CarModule,
-    VehicleModule
+    VehicleModule,
+    FormsModule,
+    PracticeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+
+
+
+ }

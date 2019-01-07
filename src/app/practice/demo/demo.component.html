@@ -1,0 +1,53 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+  <p>{{xyz}}</p>
+  <input type="button" value="checkbox" (click)="typeChange('checkbox')"><br/>
+  <input type="button" value="radio" (click)="typeChange('radio')"><br/>
+  <input [type]="text" value="text"><br/>
+
+  <input type="text" placeholder="Name" [(ngModel)]="goalText">
+
+  <p>{{goalText}}</p>
+  <p></p>
+
+
+  
+  <input type="text" placeholder="Student Name" [(ngModel)]="studentName">
+  <input type="text" placeholder="Student Age" [(ngModel)]="studentAge">
+  {{studentName}}
+  <input type="button" value="submit" (click)="add()"/>
+  <!-- <input type="checkbox" [(ngModel)]="hideAge"/>HideAge -->
+  <table>
+    <thead></thead>
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr *ngFor="let name of students">
+          <td>
+            {{name.studentName}}
+          </td>
+          <td ngShow="hideAge" >{{name.studentAge}}</td>
+        </tr>
+      </tbody>
+    
+  </table>
+  <input type="text" placeholder="enter" [(ngModel)]="isLogged">
+  <input type="button" value="submit" (click)="checkValue(isLogged)">
+   {{isLogged}}
+  <p *ngIf="isLogged">Welcome user!!</p>
+  <p *ngIf="!isLogged">Please try again!</p> 
+  <br/>
+  <br/>
+
+
+  <input type="text" [(ngModel)]="firstNo">
+  <input type="button" (click)="checkNo(firstNo)" value="Check the value">
+  
+  <p *ngIf="first">Even</p>
+  <p *ngIf="!first">Odd</p>
+
+
+  <input type="text" [(ngModel)]="name">
+  {{name}}

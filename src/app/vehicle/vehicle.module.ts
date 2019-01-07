@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BikeModule } from './bike/bike.module';
-import { BikeFormComponent } from './bike/bike-form/bike-form.component';
-import { DemoComponent } from './bike/bike-form/demo/demo.component';
+import { CarModule } from './car/car.module';
+import { CycleModule } from './cycle/cycle.module';
+
 
 @NgModule({
   imports: [
-    CommonModule,BikeModule
+    CommonModule,BikeModule,CarModule,CycleModule
   ],
-  declarations: [BikeFormComponent,DemoComponent],
-  exports:[BikeFormComponent,DemoComponent]
+  declarations: [],
+  exports:[CarModule,CycleModule,BikeModule]
 })
 export class VehicleModule { }

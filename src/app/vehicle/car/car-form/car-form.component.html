@@ -1,0 +1,34 @@
+<h1>VEHICLE INFO.</h1>
+<div style="height: 20cm; width: 50%;float:left; background-color: blanchedalmond" >
+<form>
+  <h4>CAR FORM </h4>
+  Model: <input type="text" name="model" [(ngModel)]="cModel" /><br><br>
+  No. of Wheels:<input type="text" name="wheel" [(ngModel)]="cWheels" /><br><br>
+  No. of Seats:<input type="text" name="seat" [(ngModel)]="cSeats" /><br><br>
+  Type: <select name="type" name="type" [(ngModel)]="cType"><br><br>
+    <option value="SUV">SUV</option>
+    <option value="MPV">MPV</option>
+    <option value="HATCHBACK">HATCHBACK</option>
+    <option value="SEDAN">SEDAN</option>
+
+  </select><br><br>
+  Brand Name: <select name="brand" name="brand" [(ngModel)]="cBrand"><br><br>
+    <option value="MARUTISUZUKI">MARUTISUZUKI</option>
+    <option value="HYUNDAI">HYUNDAI</option>
+    <option value="BMW">BMW</option>
+    <option value="AUDI">AUDI</option>
+    <option value="FERARI">FERARI</option>
+    <option value="MERCEDES">MERCEDES</option>
+  </select><br><br>
+  Engine Type: <input type="text" value="" name="engine" [(ngModel)]="cEngine"><br><br>
+  Date of Purchase: <input type="date" value="" name="date" [(ngModel)]="cDate"><br><br>
+
+  <input type="button" value="SUBMIT" (click)="getValue()">
+  <input type="reset" value="RESET">
+  <!-- {{cBrand}}
+  {{cDate}} -->
+
+
+</form></div>
+<div style="height: 20cm; width: 50%;float:right;background-color: blanchedalmond">
+<app-car-table [CarObject]="car" ></app-car-table></div>

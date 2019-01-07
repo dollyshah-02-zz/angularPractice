@@ -1,0 +1,20 @@
+<!-- ngStyle -->
+
+
+<h3>Ng Style</h3>
+<ul *ngFor="let person of people">
+  <li [ngStyle]="{'font-size.px':24}"
+      [style.color]="getColor(person.country)">
+    {{ person.name }} ({{ person.country }})
+  </li>
+</ul>
+<button [ngStyle]="button">Button</button>
+<ul *ngFor="let person of people">
+  <li [ngClass]="{
+  'success':person.country === 'india',
+  'primary':person.country === 'usa',
+  'danger':person.country === 'HK'
+  }">
+  {{ person.name }} ({{ person.country }})
+  </li>
+</ul>
