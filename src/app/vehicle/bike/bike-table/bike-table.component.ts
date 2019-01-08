@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-bike-table',
@@ -11,5 +11,9 @@ export class BikeTableComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  @Input('BikeModel') BikeModel:string;
+  @Input('BikeType') BikeType:string;
+  @Input('BikeBrand') BikeBrand:string;
+  @Input('BikeEngine') BikeEngine:string;
+  @Input('BikeDate') BikeDate:string;
 }

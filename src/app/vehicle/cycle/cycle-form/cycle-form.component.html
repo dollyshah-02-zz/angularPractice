@@ -1,3 +1,29 @@
-<p>
-  cycle-form works!
-</p>
+ <h1>CYCLE INFO.</h1>
+<div style="height: 20cm; width: 50%;float:left; background-color: blanchedalmond" >
+<form>
+  <h4>CYCLE FORM </h4>
+  Model: <input type="text" name="model" [(ngModel)]='cycleModel' /><br><br>
+  Type: <select name="type" name="type" [(ngModel)]='cycleType'><br><br>
+    <option value="BMX bike">BMX bike</option>
+    <option value="Cross Bicycle">Cross Bicycle</option>
+    <option value="Racing Bicyle">Racing Bicyle</option>
+   
+
+  </select><br><br>
+  Brand Name: <select name="brand" name="brand" [(ngModel)]='cycleBrand'><br><br>
+    <option value="B.S.A">B.S.A</option>
+    <option value="Atlas">Atlas</option>
+    <option value="Avon">Avon</option>
+    
+  </select><br><br>
+  Engine Type: <input type="text" value="" name="engine" [(ngModel)]='cycleEngine'><br><br>
+  Date of Purchase: <input type="date" value="" name="date" [(ngModel)]='cycleDate'><br><br>
+
+  <input type="button" value="SUBMIT" (click)="childMethod()" >
+  <input type="reset" value="RESET">
+ 
+
+</form></div>
+<div style="height: 20cm; width: 50%;float:right;background-color: blanchedalmond"> 
+ 
+ 

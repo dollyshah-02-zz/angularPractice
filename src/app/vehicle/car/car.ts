@@ -1,4 +1,5 @@
 import { Vehicle } from "../vehicle";
+import { CarEnum } from "./car.enum";
 export class Car implements Vehicle {
     NoOfSeats:number;
     NoOfWheels:number;
@@ -7,6 +8,7 @@ export class Car implements Vehicle {
     CarBrand:string;
     CarEngine:string;
     CarDateOfPurchase:string;
+    
 }
 
 

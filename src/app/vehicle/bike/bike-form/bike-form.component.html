@@ -1,0 +1,28 @@
+<h1>BIKE INFO.</h1>
+<div style="height: 20cm; width: 50%;float:left; background-color: blanchedalmond" >
+<form>
+  <h4>BIKE FORM </h4>
+  Model: <input type="text" name="model" [(ngModel)]="bModel" /><br><br>
+  Type: <select name="type" name="type" [(ngModel)]="bType"><br><br>
+    <option value="Road Bike">Road Bike</option>
+    <option value="Mountain Bike">Mountain Bike</option>
+    <option value="Hybrid">Hybrid</option>
+   
+
+  </select><br><br>
+  Brand Name: <select name="brand" name="brand" [(ngModel)]="bBrand"><br><br>
+    <option value="HARLEY DAVIDSON">HARLEY DAVIDSON</option>
+    <option value="YAMAHA">YAMAHA</option>
+    <option value="DUCATI">DUCATI</option>
+    
+  </select><br><br>
+  Engine Type: <input type="text" value="" name="engine" [(ngModel)]="bEngine"><br><br>
+  Date of Purchase: <input type="date" value="" name="date" [(ngModel)]="bDate"><br><br>
+
+  <input type="button" value="SUBMIT" >
+  <input type="reset" value="RESET">
+ 
+
+</form></div>
+<div style="height: 20cm; width: 50%;float:right;background-color: blanchedalmond">
+ <app-bike-table [BikeModel]='bModel' [BikeType]='bType' [BikeBrand]='bBrand' [BikeEngine]='bEngine' [BikeDate]='bDate' ></app-bike-table></div> -->

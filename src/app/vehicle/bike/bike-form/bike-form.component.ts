@@ -11,5 +11,10 @@ export class BikeFormComponent implements OnInit {
 
   ngOnInit() {
   }
+  bModel:string;
+  bType:string;
+  bBrand:string;
+  bEngine:string;
+  bDate:string;
 
 }

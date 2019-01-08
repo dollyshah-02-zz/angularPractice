@@ -5,11 +5,12 @@ import { CarModule } from './car/car.module';
 import { CycleModule } from './cycle/cycle.module';
 
 
+
 @NgModule({
   imports: [
     CommonModule,BikeModule,CarModule,CycleModule
   ],
   declarations: [],
-  exports:[CarModule,CycleModule,BikeModule]
+  exports:[CarModule,BikeModule,CycleModule]
 })
 export class VehicleModule { }

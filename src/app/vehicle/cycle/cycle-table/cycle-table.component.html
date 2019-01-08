@@ -1,3 +1,23 @@
-<p>
-  cycle-table works!
-</p>
+<div style="text-align:left; height: 20cm; width: 100%; background-color:blanchedalmond">
+<div style="height: 20cm; width: 50%;float: left;;background-color: blanchedalmond">
+ <app-cycle-form (CycleObject)="parentMethod($event)"></app-cycle-form></div>
+ <table>
+     <thead></thead>
+     <tbody>
+         <tr>
+             <th>Cycle Model</th>
+             <th>Cycle Type</th>
+             <th>Cycle Brand</th>
+             <th>Cycle Engine</th>
+             <th>Date of Purchase</th>
+         </tr>
+         <tr *ngFor="let c of cycle">
+             <td>{{c.cycleModel}}</td>
+             <td>{{c.cycleType}}</td>
+             <td>{{c.cycleBrand}}</td>
+             <td>{{c.cycleEngine}}</td>
+             <td>{{c.cycleDate}}</td>
+         </tr>
+     </tbody>
+ </table>
+ 
